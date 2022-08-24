@@ -2,7 +2,7 @@
 
 body {
 	font-family: var(fontFamily);
-	color: var($colorDefault);
+	color: $colorDefault;
 	background-image: url(/img/bg.png);
 }
 
@@ -15,37 +15,32 @@ a {
 		text-decoration: none;
 	}
 }
-h1 {
-	font-family: var(--font-primary);
-		color: $hColor;
+
+@mixin textos($color){
+	color:$hColor;
 
 }
-h2 {
-	font-family: var(--font-primary);
-		color: $hColor;
 
+h1 {
+	@include textos(color);
+}
+
+h2 {
+	@include textos(color);
 }
 h3 {
-	font-family: var(--font-primary);
-		color: $hColor;
-
+	@include textos(color);
 }
 h4 {
-	font-family: var(--font-primary);
-		color: $hColor;
-
+	@extend h1;
 }
 h5 {
-	font-family: var(--font-primary);
-		color: $hColor;
-
+	@extend h1;
 }
 h6 {
-	font-family: var(--font-primary);
-		color: $hColor;
+	@extend h1;
 
 }
 p {
 		color: $hColor;
-
 }

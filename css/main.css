@@ -1,3 +1,16 @@
+@charset "UTF-8";
+.bg-“info {
+  background-color: #B5E6F5; }
+
+.bg-“danger” {
+  background-color: #ff1100; }
+
+.bg-“warning” {
+  background-color: #e7eaad; }
+
+.bg-“success {
+  background-color: #80a579; }
+
 .header {
   transition: all 0.5s;
   z-index: 997;
@@ -5,7 +18,7 @@
   .header .logo img {
     max-height: 40px;
     margin-right: 6px; }
-  .header .logo h1 {
+  .header .logo h1, .header .logo h4, .header .logo h5, .header .logo h6 {
     font-size: 30px;
     margin: 0;
     font-weight: 700;
@@ -87,6 +100,18 @@ section {
 .scroll-top.active {
   visibility: visible;
   opacity: 1; }
+
+.bg-“info {
+  background-color: #B5E6F5; }
+
+.bg-“danger” {
+  background-color: #ff1100; }
+
+.bg-“warning” {
+  background-color: #e7eaad; }
+
+.bg-“success {
+  background-color: #80a579; }
 
 .footer {
   font-size: 14px;
@@ -417,6 +442,18 @@ section {
         background: rgba(13, 66, 255, 0.8);
         z-index: 9996; } }
 
+.bg-“info {
+  background-color: #B5E6F5; }
+
+.bg-“danger” {
+  background-color: #ff1100; }
+
+.bg-“warning” {
+  background-color: #e7eaad; }
+
+.bg-“success {
+  background-color: #80a579; }
+
 @font-face {
   font-family: "ngage";
   src: url("/fonts/N-Gage.ttf") format("truetype");
@@ -433,9 +470,21 @@ section {
   --color-secondary: $genericBlack;
   scroll-behavior: smooth; }
 
+.bg-“info {
+  background-color: #B5E6F5; }
+
+.bg-“danger” {
+  background-color: #ff1100; }
+
+.bg-“warning” {
+  background-color: #e7eaad; }
+
+.bg-“success {
+  background-color: #80a579; }
+
 body {
   font-family: var(fontFamily);
-  color: var(#0a0d13);
+  color: #0a0d13;
   background-image: url(/img/bg.png); }
 
 a {
@@ -445,29 +494,26 @@ a {
     color: #ffffff;
     text-decoration: none; }
 
-h1 {
-  font-family: var(--font-primary);
+h1, h4, h5, h6 {
   color: #ffffff; }
 
 h2 {
-  font-family: var(--font-primary);
   color: #ffffff; }
 
 h3 {
-  font-family: var(--font-primary);
-  color: #ffffff; }
-
-h4 {
-  font-family: var(--font-primary);
-  color: #ffffff; }
-
-h5 {
-  font-family: var(--font-primary);
-  color: #ffffff; }
-
-h6 {
-  font-family: var(--font-primary);
   color: #ffffff; }
 
 p {
   color: #ffffff; }
+
+.bg-“info {
+  background-color: #B5E6F5; }
+
+.bg-“danger” {
+  background-color: #ff1100; }
+
+.bg-“warning” {
+  background-color: #e7eaad; }
+
+.bg-“success {
+  background-color: #80a579; }
