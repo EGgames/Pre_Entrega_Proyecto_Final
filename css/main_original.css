@@ -31,12 +31,14 @@ body {
 }
 
 a {
-  color: #ffffff;
+  	color: $hColor;
+
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffffff;
+  	color: $hColor;
+
   text-decoration: none;
 }
 
@@ -47,11 +49,13 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
-  color: #ffffff;
+  	color: $hColor;
+
 
 }
 p{
-  color: #ffffff;
+  	color: $hColor;
+
 
 }
 

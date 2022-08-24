@@ -1,0 +1,102 @@
+@import "colors";
+
+.header {
+	transition: all 0.5s;
+	z-index: 997;
+	padding: 30px 0;
+	.logo {
+		img {
+			max-height: 40px;
+			margin-right: 6px;
+		}
+		h1 {
+			font-size: 30px;
+			margin: 0;
+			font-weight: 700;
+			color: $hColor;
+			font-family: var(--font-primary);
+		}
+	}
+}
+.header.sticked {
+	background: $gBlue;
+	padding: 15px 0;
+	box-shadow: 0px 2px 20px $gBlue;
+}
+section {
+	padding: 80px 0;
+	overflow: hidden;
+}
+.section-header {
+	text-align: center;
+	padding: 30px 0;
+	position: relative;
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		padding-bottom: 0;
+		color: $genericBlue;
+		position: relative;
+		z-index: 2;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 50px;
+			height: 3px;
+			background: var($colorPrimary);
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+	span {
+		position: absolute;
+		top: 46px;
+		color: $gBlue;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		font-weight: 700;
+		font-size: 56px;
+		text-transform: uppercase;
+		line-height: 0;
+	}
+	p {
+		margin-bottom: 0;
+		position: relative;
+		z-index: 2;
+	}
+}
+.scroll-top {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 15px;
+	bottom: 15px;
+	z-index: 99999;
+	background: $colorPrimary;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	transition: all 0.4s;
+	i {
+		font-size: 24px;
+		color: $genericWhite;
+		line-height: 0;
+	}
+	&:hover {
+		background: $genericBlue;
+		color: $genericWhite;
+	}
+}
+.scroll-top.active {
+	visibility: visible;
+	opacity: 1;
+}

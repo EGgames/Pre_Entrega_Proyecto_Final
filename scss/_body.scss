@@ -1,0 +1,51 @@
+@import "colors";
+
+body {
+	font-family: var(fontFamily);
+	color: var($colorDefault);
+	background-image: url(/img/bg.png);
+}
+
+a {
+	color: $hColor;
+	text-decoration: none;
+	&:hover {
+			color: $hColor;
+
+		text-decoration: none;
+	}
+}
+h1 {
+	font-family: var(--font-primary);
+		color: $hColor;
+
+}
+h2 {
+	font-family: var(--font-primary);
+		color: $hColor;
+
+}
+h3 {
+	font-family: var(--font-primary);
+		color: $hColor;
+
+}
+h4 {
+	font-family: var(--font-primary);
+		color: $hColor;
+
+}
+h5 {
+	font-family: var(--font-primary);
+		color: $hColor;
+
+}
+h6 {
+	font-family: var(--font-primary);
+		color: $hColor;
+
+}
+p {
+		color: $hColor;
+
+}
