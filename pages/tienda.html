@@ -91,21 +91,22 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Servicios</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="/pages/mantenimiento.html"><span>Servicios</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Mantenimiento</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="/pages/mantenimiento.html#mantenimiento"><span>Mantenimiento</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Solicitar Mantenimiento</a></li>
-                  <li><a href="#">Estado de Mantenimiento</a></li>
+                  <li><a href="/pages/mantenimiento.html#solicitar_mantenimiento">Solicitar Mantenimiento</a></li>
+                  <li><a href="/pages/mantenimiento.html#estado_mantenimiento">Estado de Mantenimiento</a></li>
 
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="#">Quienes somos</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a class="button" href="#">Ingresar</a></li>
-          <li><a class="button" href="#">Registrarse</a></li>
+          <li><a href="/pages/quienes_somos.html">Quienes somos</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a class="button" onclick="openForm()">Ingresar</a></li>
+          <li><a class="button" href="/pages/registro.html">Registrarse</a></li>
+          <li><a class="button" onclick="openAdver()">Carrito</a></li>
         </ul>
       </nav>
 
@@ -259,7 +260,34 @@
                     </div>
                 </div>
         </div>   
-          </section>
+      </section>
+
+<!--poppup-->
+<div class="form-popup" id="loginPoppup">
+  <form action="/action_page.php" class="form-container">
+    <h1>Ingreso</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Ingresa Email" name="email" required>
+
+    <label for="psw"><b>Constraseña</b></label>
+    <input type="password" placeholder="Ingresa contraseña" name="psw" required>
+
+    <button type="submit" class="btn">Ingresar</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+  </form>
+</div>
+
+<div class="form-popup" id="inConstructionInfo">
+  <form action="/action_page.php" class="form-container">
+    <h1>Seccion de la pagina en construccion</h1>
+    <h2>Pagina en desarrollo, por favor, sea PACIENTE</h2>
+    <button type="button" class="btn cancel" onclick="closeAdver()">Cerrar</button>
+  </form>
+</div>
+<!--fin de poppup-->
+
+
   <footer id="footer" class="footer">
       <div>
         <span>Emiliano Galmarini</span>
@@ -276,6 +304,24 @@
   <script src="/vendor/php-email-form/validate.js"></script>
 
   <script src="/js/main.js"></script>
+  <script>
+    function openForm() {
+      document.getElementById("loginPoppup").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("loginPoppup").style.display = "none";
+    }
+    </script>
 
+<script>
+  function openAdver() {
+    document.getElementById("inConstructionInfo").style.display = "block";
+  }
+  
+  function closeAdver() {
+    document.getElementById("inConstructionInfo").style.display = "none";
+  }
+  </script>
 </body>
 </html>
