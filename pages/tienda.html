@@ -45,52 +45,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="../index.html" class="active">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Tienda</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Placas madre</a></li>
-              <li class="dropdown"><a href="#"><span>Almacenamiento</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">HDD 3.5</a></li>
-                  <li><a href="#">SSD</a></li>
-                  <li><a href="#">M.2</a></li>
-                  <li><a href="#">Externo</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Procesadores</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">AMD</a></li>
-                  <li><a href="#">Intel</a></li>
-
-                </ul>
-              </li>              
-              <li><a href="#">Tarjetas graficas</a></li>
-              <li><a href="#">Gabinetes</a></li>
-              <li><a href="#">Fuentes de poder</a></li>
-              <li class="dropdown"><a href="#"><span>Perifericos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Teclados</a></li>
-                  <li><a href="#">Mouses</a></li>
-                  <li><a href="#">Monitores</a></li>
-                  <li><a href="#">Auriculares</a></li>
-                  <li><a href="#">Parlantes</a></li>
-                </ul>
-              </li> 
-              <li class="dropdown"><a href="#"><span>Memorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">SD</a></li>
-                  <li><a href="#">RAM</a></li>
-                </ul>
-              </li> 
-              <li><a href="#">Equipos armados</a></li>
-              <li class="dropdown"><a href="#"><span>Portatiles</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Notebooks</a></li>
-                  <li><a href="#">Netbooks</a></li>
-                  <li><a href="#">Chromebooks</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li><a href="/pages/tienda.html">Tienda</a></li>
+            
           <li class="dropdown"><a href="/pages/mantenimiento.html"><span>Servicios</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li class="dropdown"><a href="/pages/mantenimiento.html#mantenimiento"><span>Mantenimiento</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -112,154 +68,467 @@
 
     </div>
   </header>
+  
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container" >
+        
 
-  <section id="hero" class="hero d-flex align-items-center ">
-    <div class="container">
-      <div>
         
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
 
-          <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2  row-cols-md-3 row-cols-xl-4 justify-content-center">
                 
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
-                        <img class="card-img-top" src="/img/Wolf_Logo_B.png" alt="..." />
-                        <div class="card-body p-4">
-                            <div class="text-center" style="color:black;">
-                                <h5 class="fw-bolder">CPU</h5>
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <span  class="text-muted text-decoration-line-through">$20.00</span>
-                                $18.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                        </div>
-                    </div>
-                </div>
+          
+              <div class="container-post">
 
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
-                        <img class="card-img-top" src="/img/Wolf_Logo_B.png" alt="..." />
-                        <div class="card-body p-4">
-                            <div class="text-center" style="color:black;">
-                                <h5 class="fw-bolder">CPU</h5>
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                $18.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                        </div>
-                    </div>
+                <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+                <input type="radio" id="CPU" name="categories" value="CPU">
+                <input type="radio" id="MB" name="categories" value="MB">
+                <input type="radio" id="PS" name="categories" value="PS">
+                <input type="radio" id="RAM" name="categories" value="RAM">
+                <input type="radio" id="HDD" name="categories" value="HDD">
+                <input type="radio" id="GAB" name="categories" value="GAB">
+                <input type="radio" id="VGA" name="categories" value="VGA">
+                <input type="radio" id="PER" name="categories" value="PER">
+                <input type="radio" id="EQA" name="categories" value="EQA">
+                <input type="radio" id="LAP" name="categories" value="LAP">
+        
+                <div class="container-category">
+                    <label for="TODOS">TODOS</label>
+                    <label for="CPU">CPU</label>
+                    <label for="MB">Motherboard</label>
+                    <label for="PS">Fuente de alimentacion</label>
+                    <label for="RAM">Memoria Ram</label>
+                    <label for="HDD">Almacenamiento</label>
+                    <label for="GAB">Gabinetes</label>
+                    <label for="VGA">VGA</label>
+                    <label for="PER">Perifericos</label>
+                    <label for="EQA">Equipos armados</label>
+                    <label for="LAP">Portatiles</label>
                 </div>
+        
+                <div class="posts">
+        
+                    <div class="post" data-category="CPU">
+                      <div class="ctn-img">
+                            <img src="/img/articulos/intel_8700k.png" alt="">
+                        </div>
+                        <h2>Intel Core I7 8700k</h2>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                      </div>
+                        <span class="text-muted text-decoration-line-through">$500</span>
+                        <span>$450</span>
+                        <ul class="ctn-tag">
+                            <li>CPU</li>
+                            <li>INTEL</li>
+                        </ul>
+                        <a href="#"><button>Ver articulo</button></a>
+                        <a href="#"><button>Agregar al carrito</button></a>
+                    </div>
+        
+                      <div class="post" data-category="CPU">
+        
+                        <div class="ctn-img"><img src="/img/articulos/intel_12700k.png" alt=""></div>
+                        <h2>Intel Core I7 12700k</h2>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                      </div>
+                        <span class="text-muted text-decoration-line-through">$790</span>
+                        <span>$650</span>
+                        <ul class="ctn-tag">
+                            <li>CPU</li>
+                            <li>INTEL</li>
+                        </ul>
+                        <a href="#"><button>Ver articulo</button></a>
+                        <a href="#"><button>Agregar al carrito</button></a>        
+                    </div>
+        
+                    <div class="post" data-category="MB">
+        
+                      <div class="ctn-img"><img src="/img/articulos/Z370E_gaming.png" alt=""></div>
+                      <h2>Motherboard Asus z370e Gaming</h2>
+                      <div class="d-flex justify-content-center small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                    </div>
+                      <span class="text-muted text-decoration-line-through">$350</span>
+                      <span>$250</span>
+                      <ul class="ctn-tag">
+                          <li>CPU</li>
+                          <li>INTEL</li>
+                      </ul>
+                      <a href="#"><button>Ver articulo</button></a>
+                      <a href="#"><button>Agregar al carrito</button></a>        
+                  </div>
+        
+                  <div class="post" data-category="MB">
+        
+                    <div class="ctn-img"><img src="/img/articulos/z690e_gaming.png" alt=""></div>
+                    <h2>Asus Rog Strix z690e Gaming</h2>
+                    <div class="d-flex justify-content-center small text-warning mb-2">
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                  </div>
+                    <span class="text-muted text-decoration-line-through">$790</span>
+                    <span>$350</span>
+                    <ul class="ctn-tag">
+                        <li>Motherboard</li>
+                        <li>INTEL</li>
+                    </ul>
+                    <a href="#"><button>Ver articulo</button></a>
+                    <a href="#"><button>Agregar al carrito</button></a>        
+                </div>
+        
+                <div class="post" data-category="RAM">
+        
+                  <div class="ctn-img"><img src="/img/articulos/ram_vengenace_pro.png" alt=""></div>
+                  <h2>Memoria RAM Corsair Vengeance Pro RGB 3200MHZ DDR4</h2>
+                  <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                </div>
+                  <span class="text-muted text-decoration-line-through">$200</span>
+                  <span>$140</span>
+                  <ul class="ctn-tag">
+                      <li>MEMORIA RAM</li>
+                  </ul>
+                  <a href="#"><button>Ver articulo</button></a>
+                  <a href="#"><button>Agregar al carrito</button></a>        
+              </div>
+        
+              <div class="post" data-category="RAM">
+        
+                <div class="ctn-img"><img src="/img/articulos/ram_xpg.png" alt=""></div>
+                <h2>Memoria RAM XPG RGB 3200MHZ DDR4</h2>
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+              </div>
+                <span class="text-muted text-decoration-line-through">$190</span>
+                <span>$120</span>
+                <ul class="ctn-tag">
+                    <li>MEMORIA RAM</li>
+                </ul>
+                <a href="#"><button>Ver articulo</button></a>
+                <a href="#"><button>Agregar al carrito</button></a>        
+            </div>
+        
+            <div class="post" data-category="PS">
+        
+              <div class="ctn-img"><img src="/img/articulos/ps_redragon.png" alt=""></div>
+              <h2>Fuente de alimentacion Redragon 600W</h2>
+              <div class="d-flex justify-content-center small text-warning mb-2">
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+            </div>
+              <span class="text-muted text-decoration-line-through">$55</span>
+              <span>$50</span>
+              <ul class="ctn-tag">
+                  <li>Fuente de alimentacion</li>
+              </ul>
+              <a href="#"><button>Ver articulo</button></a>
+              <a href="#"><button>Agregar al carrito</button></a>        
+          </div>
 
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
-                        <img class="card-img-top" src="/img/Wolf_Logo_B.png" alt="..." />
-                        <div class="card-body p-4">
-                          <div class="text-center" style="color:black;">
-                            <h5 class="fw-bolder">CPU</h5>
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                $18.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                        </div>
-                    </div>
-                </div>
+          <div class="post" data-category="PS">
+        
+            <div class="ctn-img"><img src="/img/articulos/ps_vtc_600.png" alt=""></div>
+            <h2>Fuente de alimentacion Cougar VTC 600W</h2>
+            <div class="d-flex justify-content-center small text-warning mb-2">
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+            </div>
+            <span class="text-muted text-decoration-line-through">$50</span>
+            <span>$48</span>
+            <ul class="ctn-tag">
+                <li>Fuente de alimentacion</li>
+            </ul>
+            <a href="#"><button>Ver articulo</button></a>
+            <a href="#"><button>Agregar al carrito</button></a>        
+        </div>
 
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
-                        <img class="card-img-top" src="/img/Wolf_Logo_B.png" alt="..." />
-                        <div class="card-body p-4">
-                          <div class="text-center" style="color:black;">
-                            <h5 class="fw-bolder">CPU</h5>
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                $18.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                        </div>
-                    </div>
-                </div>
+        <div class="post" data-category="HDD">
+        
+          <div class="ctn-img"><img src="/img/articulos/HDD_7200_wd.png" alt=""></div>
+          <h2>Disco Duro Western Digital 1TB 7200rpm</h2>
+          <div class="d-flex justify-content-center small text-warning mb-2">
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+          </div>
+          <span class="text-muted text-decoration-line-through">$75</span>
+          <span>$60</span>
+          <ul class="ctn-tag">
+              <li>HDD</li>
+          </ul>
+          <a href="#"><button>Ver articulo</button></a>
+          <a href="#"><button>Agregar al carrito</button></a>        
+      </div>
 
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="/img/Wolf_Logo_B.png" alt="..." />
-                        <div class="card-body p-4">
-                          <div class="text-center" style="color:black;">
-                            <h5 class="fw-bolder">CPU</h5>
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <span class="text-muted text-decoration-line-through">$20.00</span>
-                                $18.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="post" data-category="HDD">
+        
+        <div class="ctn-img"><img src="/img/articulos/crucial_ssd_240.png" alt=""></div>
+        <h2>Unidad de estado Solido Crucial SSD 240GB</h2>
+        <div class="d-flex justify-content-center small text-warning mb-2">
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+        </div>
+        <span class="text-muted text-decoration-line-through">$50</span>
+        <span>$42</span>
+        <ul class="ctn-tag">
+            <li>SSD</li>
+        </ul>
+        <a href="#"><button>Ver articulo</button></a>
+        <a href="#"><button>Agregar al carrito</button></a>        
+    </div>
 
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="/img/Wolf_Logo_B.png" alt="..." />
-                        <div class="card-body p-4">
-                          <div class="text-center" style="color:black;">
-                            <h5 class="fw-bolder">CPU</h5>
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                $18.00
-                            </div>
-                        </div>
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                        </div>
-                    </div>
-                </div>
-        </div>   
+
+    <div class="post" data-category="GAB">
+    <div class="ctn-img"><img src="/img/articulos/cougar_panzer_evo.png" alt=""></div>
+    <h2>Gabinete Cougar Panzer Evo RGB</h2>
+    <div class="d-flex justify-content-center small text-warning mb-2">
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+    </div>
+    <span class="text-muted text-decoration-line-through">$380</span>
+    <span>$280</span>
+    <ul class="ctn-tag">
+        <li>Gabinete</li>
+    </ul>
+    <a href="#"><button>Ver articulo</button></a>
+    <a href="#"><button>Agregar al carrito</button></a>        
+</div>
+
+<div class="post" data-category="GAB">
+<div class="ctn-img"><img src="/img/articulos/storm_trooper.png" alt=""></div>
+<h2>Gabinete Cooler Master Storm Trooper</h2>
+<div class="d-flex justify-content-center small text-warning mb-2">
+  <div class="bi-star-fill"></div>
+  <div class="bi-star-fill"></div>
+  <div class="bi-star-fill"></div>
+  <div class="bi-star-fill"></div>
+  <div class="bi-star-fill"></div>
+</div>
+<span class="text-muted text-decoration-line-through">$200</span>
+<span>$130</span>
+<ul class="ctn-tag">
+    <li>Gabinete</li>
+</ul>
+<a href="#"><button>Ver articulo</button></a>
+<a href="#"><button>Agregar al carrito</button></a>        
+</div>
+
+<div class="post" data-category="VGA">
+  <div class="ctn-img"><img src="/img/articulos/3060_XC.png" alt=""></div>
+  <h2>Tarjeta Grafica Nvidia RTX 3060 XC EVGA</h2>
+  <div class="d-flex justify-content-center small text-warning mb-2">
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+    <div class="bi-star-fill"></div>
+  </div>
+  <span class="text-muted text-decoration-line-through">$900</span>
+  <span>$650</span>
+  <ul class="ctn-tag">
+      <li>VGA</li>
+  </ul>
+  <a href="#"><button>Ver articulo</button></a>
+  <a href="#"><button>Agregar al carrito</button></a>        
+  </div>
+
+  <div class="post" data-category="VGA">
+    <div class="ctn-img"><img src="/img/articulos/3060_XC.png" alt=""></div>
+    <h2>Tarjeta Grafica Nvidia RTX 1660 Gigabyte</h2>
+    <div class="d-flex justify-content-center small text-warning mb-2">
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+      <div class="bi-star-fill"></div>
+    </div>
+    <span class="text-muted text-decoration-line-through">$500</span>
+    <span>$350</span>
+    <ul class="ctn-tag">
+        <li>VGA</li>
+    </ul>
+    <a href="#"><button>Ver articulo</button></a>
+    <a href="#"><button>Agregar al carrito</button></a>        
+    </div>
+
+
+    <div class="post" data-category="PER">
+      <div class="ctn-img"><img src="/img/articulos/G910.png" alt=""></div>
+      <h2>Teclado mecanico Logitech G910 Orion Spark</h2>
+      <div class="d-flex justify-content-center small text-warning mb-2">
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+      </div>
+      <span class="text-muted text-decoration-line-through">$210</span>
+      <span>$140</span>
+      <ul class="ctn-tag">
+          <li>Periferico</li>
+      </ul>
+      <a href="#"><button>Ver articulo</button></a>
+      <a href="#"><button>Agregar al carrito</button></a>        
+    </div>
+
+    <div class="post" data-category="PER">
+      <div class="ctn-img"><img src="/img/articulos/kumara.png" alt=""></div>
+      <h2>Teclado mecanico Redragon Kumara RGB</h2>
+      <div class="d-flex justify-content-center small text-warning mb-2">
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+        <div class="bi-star-fill"></div>
+      </div>
+      <span class="text-muted text-decoration-line-through">$70</span>
+      <span>$65</span>
+      <ul class="ctn-tag">
+          <li>Periferico</li>
+      </ul>
+      <a href="#"><button>Ver articulo</button></a>
+      <a href="#"><button>Agregar al carrito</button></a>        
+      </div>
+
+      <div class="post" data-category="PER">
+        <div class="ctn-img"><img src="/img/articulos/g502.png" alt=""></div>
+        <h2>Mouse Gaming Logitech G502 Hero</h2>
+        <div class="d-flex justify-content-center small text-warning mb-2">
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+          <div class="bi-star-fill"></div>
+        </div>
+        <span class="text-muted text-decoration-line-through">$100</span>
+        <span>$70</span>
+        <ul class="ctn-tag">
+            <li>Periferico</li>
+        </ul>
+        <a href="#"><button>Ver articulo</button></a>
+        <a href="#"><button>Agregar al carrito</button></a>        
+        </div>
+
+        <div class="post" data-category="EQA">
+          <div class="ctn-img"><img src="/img/articulos/hp_des.png" alt=""></div>
+          <h2>Equipo armado HP de escritorio y oficina</h2>
+          <div class="d-flex justify-content-center small text-warning mb-2">
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+            <div class="bi-star-fill"></div>
+          </div>
+          <span class="text-muted text-decoration-line-through">$600</span>
+          <span>$550</span>
+          <ul class="ctn-tag">
+              <li>Equipos armados</li>
+          </ul>
+          <a href="#"><button>Ver articulo</button></a>
+          <a href="#"><button>Agregar al carrito</button></a>        
+          </div>
+
+          <div class="post" data-category="EQA">
+            <div class="ctn-img"><img src="/img/articulos/lenovo_des.png" alt=""></div>
+            <h2>Equipo armado Lenovo thinkcentre</h2>
+            <div class="d-flex justify-content-center small text-warning mb-2">
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+            </div>
+            <span class="text-muted text-decoration-line-through">$700</span>
+            <span>$600</span>
+            <ul class="ctn-tag">
+                <li>Equipos armados</li>
+            </ul>
+            <a href="#"><button>Ver articulo</button></a>
+            <a href="#"><button>Agregar al carrito</button></a>        
+          </div>
+
+          <div class="post" data-category="LAP">
+            <div class="ctn-img"><img src="/img/articulos/lenovos_145.png" alt=""></div>
+            <h2>Laptop Lenovo Ideapad S145</h2>
+            <div class="d-flex justify-content-center small text-warning mb-2">
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+            </div>
+            <span class="text-muted text-decoration-line-through">$700</span>
+            <span>$590</span>
+            <ul class="ctn-tag">
+                <li>Laptop</li>
+            </ul>
+            <a href="#"><button>Ver articulo</button></a>
+            <a href="#"><button>Agregar al carrito</button></a>        
+          </div>
+
+          <div class="post" data-category="LAP">
+            <div class="ctn-img"><img src="/img/articulos/asus_laptop.png" alt=""></div>
+            <h2>Laptop Asus L510 Ultra</h2>
+            <div class="d-flex justify-content-center small text-warning mb-2">
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+              <div class="bi-star-fill"></div>
+            </div>
+            <span class="text-muted text-decoration-line-through">$800</span>
+            <span>$690</span>
+            <ul class="ctn-tag">
+                <li>Laptop</li>
+            </ul>
+            <a href="#"><button>Ver articulo</button></a>
+            <a href="#"><button>Agregar al carrito</button></a>        
+          </div>
+
+
+            </div>        
+          </div>
+      </div>
+</div>
       </section>
 
 <!--poppup-->
@@ -288,13 +557,71 @@
 <!--fin de poppup-->
 
 
-  <footer id="footer" class="footer">
-      <div>
-        <span>Emiliano Galmarini</span>
-        <span>- Alumno CoderHouse - Comision 38180 -</span>
-        <span><a href="mailto:emiliano.galmarini@gmail.com">emiliano.galmarini@gmail.com</a></span>
+<footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+        <a href="index.html" class="col-lg-5 col-md-12 footer-info">
+          <div style="font-family: 'Ngage'; font-size: 20px;">
+            <a href="/index.html">Wolf Informatica</a>
+        </div>
+        </a>
+        <p>Sitio web oficial de Wolf informatica. Para tener todas las novedades sobre nuestros servicios y productos, siguenos en nuestras redes sociales: </p>
+        <div class="social-links d-flex mt-4"> 
+          <a href="https://www.twitter.com/wolf.informatica.uy/" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.facebook.com/wolf.informatica.uy/" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/wolf.informatica.uy/" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
-  </footer>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Enlaces utiles</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/pages/tienda.html">Tienda</a></li>
+          <li><a href="/pages/mantenimiento.html">Servicios</a></li>
+          <li><a href="/pages/quienes_somos.html">Quienes somos</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="#">Politicas de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Nuestros servicios</h4>
+        <ul>
+          <li><a href="/pages/mantenimiento.html#mantenimiento">Mantenimiento informatico</a></li>
+          <li><a href="/pages/mantenimiento.html#solicitar_mantenimiento">Solicitud de mantenimiento</a></li>
+          <li><a href="/pages/mantenimiento.html#estado_mantenimiento">Estado de mantenimiento</a></li>
+          <li><a href="/pages/tienda.html">Venta de componentes</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contactanos</h4>
+        <p>
+          Exodo 1480bis <br>
+          Ciudad de Paysandu, 60000<br>
+          Uruguay <br><br>
+          <strong>Whatsapp y llamadas:</strong> +598 98 261 583<br>
+          <strong>Email: </strong><a href="mailto:emiliano.galmarini@gmail.com">wolf.informatica.uy@gmail.com</a><br>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Wolf Informatica</span></strong>. Todos los derechos reservados
+    </div>
+    <div class="credits">
+       Diseñado por <a href="#">Emiliano Galmarini - Alumno CoderHouse - Comision 38180</a>
+    </div>
+  </div>
+
+</footer>
 
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
