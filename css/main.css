@@ -485,7 +485,7 @@ section {
 body {
   font-family: var(fontFamily);
   color: #0a0d13;
-  background-image: url(../img/bg.svg);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
