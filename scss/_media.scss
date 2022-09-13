@@ -4,19 +4,23 @@
 			font-size: 28px;
 			margin-bottom: 15px;
 		}
+
 		span {
 			font-size: 38px;
 		}
 	}
 }
+
 @media screen and (max-width: 768px) {
 	[data-aos-delay] {
 		transition-delay: 0 !important;
 	}
 }
+
 @media (min-width: 1280px) {
 	.navbar {
 		padding: 0;
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -24,14 +28,17 @@
 			list-style: none;
 			align-items: center;
 		}
+
 		li {
 			position: relative;
+
 			&:hover {
 				>a {
 					color: $genericWhite;
 				}
 			}
 		}
+
 		a {
 			display: flex;
 			align-items: center;
@@ -43,6 +50,7 @@
 			color: $gGray;
 			white-space: nowrap;
 			transition: 0.3s;
+
 			&:focus {
 				display: flex;
 				align-items: center;
@@ -54,49 +62,59 @@
 				color: $gGray;
 				white-space: nowrap;
 				transition: 0.3s;
+
 				i {
 					font-size: 12px;
 					line-height: 0;
 					margin-left: 5px;
 				}
 			}
+
 			i {
 				font-size: 12px;
 				line-height: 0;
 				margin-left: 5px;
 			}
+
 			&:hover {
 				color: $genericWhite;
 			}
 		}
+
 		.active {
 			color: $genericWhite;
+
 			&:focus {
 				color: $genericWhite;
 			}
 		}
+
 		.button {
 			background: $colorPrimary;
 			padding: 8px 20px;
 			margin-left: 30px;
 			border-radius: 4px;
 			color: $genericWhite;
+
 			&:focus {
 				background: $colorPrimary;
 				padding: 8px 20px;
 				margin-left: 30px;
 				border-radius: 4px;
 				color: $genericWhite;
+
 				&:hover {
 					color: $genericWhite;
 					background: $genericBlue;
 				}
 			}
+
 			&:hover {
 				color: $genericWhite;
 				background: $genericBlue;
 			}
 		}
+
 		.dropdown {
 			ul {
 				display: block;
@@ -112,33 +130,40 @@
 				box-shadow: 0px 0px 30px $colorShadow;
 				transition: 0.3s;
 				border-radius: 4px;
+
 				li {
 					min-width: 200px;
+
 					&:hover {
 						>a {
 							color: $colorPrimary;
 						}
 					}
 				}
+
 				a {
 					padding: 10px 20px;
 					font-size: 15px;
 					text-transform: none;
 					font-weight: 400;
 					color: $colorSecondary;
+
 					i {
 						font-size: 12px;
 					}
+
 					&:hover {
 						color: $colorPrimary;
 					}
 				}
+
 				.active {
 					&:hover {
 						color: $colorPrimary;
 					}
 				}
 			}
+
 			&:hover {
 				>ul {
 					opacity: 1;
@@ -146,12 +171,14 @@
 					visibility: visible;
 				}
 			}
+
 			.dropdown {
 				ul {
 					top: 0;
 					left: calc(100% - 30px);
 					visibility: hidden;
 				}
+
 				&:hover {
 					>ul {
 						opacity: 1;
@@ -163,13 +190,16 @@
 			}
 		}
 	}
+
 	.mobile-nav-show {
 		display: none;
 	}
+
 	.mobile-nav-hide {
 		display: none;
 	}
 }
+
 @media (min-width: 1280px) and (max-width: 1366px) {
 	.navbar {
 		.dropdown {
@@ -177,6 +207,7 @@
 				ul {
 					left: -90%;
 				}
+
 				&:hover {
 					>ul {
 						left: -100%;
@@ -186,6 +217,7 @@
 		}
 	}
 }
+
 @media (max-width: 1279px) {
 	.navbar {
 		position: fixed;
@@ -196,6 +228,7 @@
 		bottom: 0;
 		transition: 0.3s;
 		z-index: 9997;
+
 		ul {
 			position: absolute;
 			inset: 0;
@@ -206,6 +239,7 @@
 			transition: 0.3s;
 			z-index: 9998;
 		}
+
 		a {
 			display: flex;
 			align-items: center;
@@ -217,6 +251,7 @@
 			color: $gGray;
 			white-space: nowrap;
 			transition: 0.3s;
+
 			&:focus {
 				display: flex;
 				align-items: center;
@@ -228,27 +263,33 @@
 				color: $gGray;
 				white-space: nowrap;
 				transition: 0.3s;
+
 				i {
 					font-size: 12px;
 					line-height: 0;
 					margin-left: 5px;
 				}
 			}
+
 			i {
 				font-size: 12px;
 				line-height: 0;
 				margin-left: 5px;
 			}
+
 			&:hover {
 				color: $genericWhite;
 			}
 		}
+
 		.active {
 			color: $genericWhite;
+
 			&:focus {
 				color: $genericWhite;
 			}
 		}
+
 		li {
 			&:hover {
 				>a {
@@ -256,28 +297,33 @@
 				}
 			}
 		}
+
 		.button {
 			background: $colorPrimary;
 			padding: 8px 20px;
 			border-radius: 4px;
 			margin: 15px;
 			color: $genericWhite;
+
 			&:focus {
 				background: $colorPrimary;
 				padding: 8px 20px;
 				border-radius: 4px;
 				margin: 15px;
 				color: $genericWhite;
+
 				&:hover {
 					color: $genericWhite;
 					background: $genericBlue;
 				}
 			}
+
 			&:hover {
 				color: $genericWhite;
 				background: $genericBlue;
 			}
 		}
+
 		.dropdown {
 			ul {
 				position: static;
@@ -287,6 +333,7 @@
 				transition: all 0.5s ease-in-out;
 				border: 1px solid $genericBlue;
 			}
+
 			.dropdown {
 				ul {
 					position: static;
@@ -296,15 +343,18 @@
 					transition: all 0.5s ease-in-out;
 					border: 1px solid $genericBlue;
 				}
+
 				>.dropdown-active {
 					display: block;
 				}
 			}
+
 			>.dropdown-active {
 				display: block;
 			}
 		}
 	}
+
 	.mobile-nav-show {
 		color: $genericWhite;
 		font-size: 28px;
@@ -314,6 +364,7 @@
 		z-index: 9999;
 		margin-right: 10px;
 	}
+
 	.mobile-nav-hide {
 		color: $genericWhite;
 		font-size: 32px;
@@ -325,10 +376,13 @@
 		top: 20px;
 		z-index: 9999;
 	}
+
 	.mobile-nav-active {
 		overflow: hidden;
+
 		.navbar {
 			right: 0;
+
 			&:before {
 				content: "";
 				position: fixed;

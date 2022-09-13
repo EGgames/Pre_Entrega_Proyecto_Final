@@ -17,15 +17,16 @@ $red: #ff1100;
 $yellow: #e7eaad;
 $green: #80a579;
 
-$colors:(
-      “info: $blue,
-      “danger”: $red,
-      “warning”: $yellow,
-      “success: $green
-      );
+$colors: (
+  “info: $blue,
+  “danger”: $red,
+  “warning”: $yellow,
+  “success: $green
+);
 
-@each $name, $value in $colors {
-    .bg-#{$name} {
-      background-color: $value;
-    }
+@each $name,
+$value in $colors {
+  .bg-#{$name} {
+    background-color: $value;
   }
+}

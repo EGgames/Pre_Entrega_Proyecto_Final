@@ -15,4 +15,4 @@ document.getElementById('modal-back').onclick=function(){ borrar('modal'); }
 
 
 //probando la función, creando una alerta
-msj('Desarrollo Geek', 'Hola, soy un contenido...........¡Gracias por visitar <b>Desarrollo Geek</b>!</br>Esta es una demo de una alerta personalizada. C:', 'Cerrar');
+msj('Soy una alerta de advertencia. ', 'Cerrar');
