@@ -1,5 +1,7 @@
 @import "colors";
 
+/* Estilo del Body principal*/
+
 body {
 	font-family: var(fontFamily);
 	color: $colorDefault;
@@ -24,9 +26,6 @@ a {
 
 }
 
-
-
-
 .filterDiv {
 	float: left;
 	background-color: #2196F3;
@@ -47,7 +46,7 @@ a {
 	overflow: hidden;
 }
 
-/* Style the buttons */
+/* Estilo de botones */
 
 .btn {
 	border: none;
@@ -65,16 +64,6 @@ a {
 		color: white;
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
 component_name {
 	color: black;

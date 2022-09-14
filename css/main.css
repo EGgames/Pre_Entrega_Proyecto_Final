@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*Puerto de importacion general de estilos del sitio web*/
+/*Elementos generales del Header*/
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -101,6 +104,8 @@ section {
   visibility: visible;
   opacity: 1; }
 
+/*Elementos que dan estilo al Footer*/
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -188,6 +193,7 @@ section {
     .footer .credits a {
       color: #fff; }
 
+/*Responsive del sitio*/
 @media (max-width: 640px) {
   .section-header h2 {
     font-size: 28px;
@@ -442,6 +448,8 @@ section {
         background: rgba(13, 66, 255, 0.8);
         z-index: 9996; } }
 
+/*Fuentes tipograficas del proyecto*/
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -470,6 +478,7 @@ section {
   --color-secondary: $genericBlack;
   scroll-behavior: smooth; }
 
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -482,6 +491,7 @@ section {
 .bg-“success {
   background-color: #80a579; }
 
+/* Estilo del Body principal*/
 body {
   font-family: var(fontFamily);
   color: #0a0d13;
@@ -513,7 +523,7 @@ a {
   margin-top: 20px;
   overflow: hidden; }
 
-/* Style the buttons */
+/* Estilo de botones */
 .btn {
   border: none;
   outline: none;
@@ -541,6 +551,7 @@ h3 {
 p {
   color: #ffffff; }
 
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -553,6 +564,7 @@ p {
 .bg-“success {
   background-color: #80a579; }
 
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -571,7 +583,7 @@ body {
 * {
   box-sizing: border-box; }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
+/* Botón utilizado para abrir el formulario de contacto - fijo en la parte inferior de la página */
 .open-button {
   background-color: rgba(14, 29, 52, 0.9);
   color: #fff;
@@ -584,7 +596,7 @@ body {
   right: 28px;
   width: 280px; }
 
-/* The popup form - hidden by default */
+/* El formulario poppup - oculto por defecto */
 .form-popup {
   display: none;
   position: fixed;
@@ -593,7 +605,7 @@ body {
   border: 3px solid #fff;
   z-index: 9; }
 
-/* Add styles to the form container */
+/* Estilos del formulario contenedor */
 .form-container {
   max-width: 300px;
   padding: 10px;
@@ -621,11 +633,6 @@ body {
   .form-container .btn:hover {
     opacity: 1; }
 
-/* Full-width input fields */
-/* When the inputs get focus, do something */
-/* Set a style for the submit/login button */
-/* Add a red background color to the cancel button */
-/* Add some hover effects to buttons */
 .open-button:hover {
   opacity: 1; }
 
@@ -639,11 +646,7 @@ body {
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  /*   100% {
-		-webkit-transform: translateX(calc(-250px * 7));
-				transform: translateX(calc(-250px * 7));
-	  } */ }
+    transform: translateX(0); } }
 
 @keyframes scroll {
   0% {
@@ -662,14 +665,12 @@ body {
   position: relative;
   width: 960px; }
   .slider::before {
-    /*   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
     content: "";
     height: 100px;
     position: absolute;
     width: 200px;
     z-index: 2; }
   .slider::after {
-    /*   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
     content: "";
     height: 100px;
     position: absolute;
@@ -691,6 +692,7 @@ body {
     height: 100px;
     width: 250px; }
 
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -711,7 +713,7 @@ body {
   padding: 20px;
   font-family: Arial; }
 
-/* Center website */
+/* Centrar Sitio */
 .main {
   max-width: 1000px;
   margin: auto; }
@@ -726,30 +728,29 @@ h1, h4, h5, h6 {
   .row > .column {
     padding: 8px; }
 
-/* Add padding BETWEEN each column */
-/* Create three equal columns that floats next to each other */
+/* Agrega un padding Entre cada columna */
+/* Crea tres columnas iguales que estan flotando una al lado de la otra*/
 .column {
   float: left;
   width: 33.33%;
   display: none;
-  /* Hide all elements by default */ }
+  /* Oculta todos los elementos por defecto */ }
 
-/* Clear floats after rows */
+/* Borra floats despues de las filas */
 .row:after {
   content: "";
   display: table;
   clear: both; }
 
-/* Content */
+/* Contenido del content */
 .content {
   background-color: white;
   padding: 10px; }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block; }
 
-/* Style the buttons */
+/* Estilo de botones */
 .btn {
   border: none;
   outline: none;
@@ -762,6 +763,7 @@ h1, h4, h5, h6 {
     background-color: #666;
     color: white; }
 
+/* Colores generales del proyecto*/
 .bg-“info {
   background-color: #B5E6F5; }
 
@@ -773,46 +775,6 @@ h1, h4, h5, h6 {
 
 .bg-“success {
   background-color: #80a579; }
-
-/*Portada*/
-.blog-container-cover {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  margin-top: 80px;
-  background-image: url(../img/img3.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .blog-container-cover:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgba(13, 66, 255, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0; }
-
-.container-info-cover {
-  max-width: 800px;
-  height: 500px;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1; }
-  .container-info-cover h1, .container-info-cover h4, .container-info-cover h5, .container-info-cover h6 {
-    font-size: 60px;
-    font-weight: 500;
-    color: #000000;
-    margin-bottom: 20px; }
-  .container-info-cover p {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 300; }
 
 /*Contenedor de categorias*/
 input[type="radio"] {

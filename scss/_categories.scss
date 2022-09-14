@@ -10,7 +10,7 @@
   font-family: Arial;
 }
 
-/* Center website */
+/* Centrar Sitio */
 
 .main {
   max-width: 1000px;
@@ -31,19 +31,18 @@ h1 {
   }
 }
 
-/* Add padding BETWEEN each column */
-
-/* Create three equal columns that floats next to each other */
+/* Agrega un padding Entre cada columna */
+/* Crea tres columnas iguales que estan flotando una al lado de la otra*/
 
 .column {
   float: left;
   width: 33.33%;
   display: none;
 
-  /* Hide all elements by default */
+  /* Oculta todos los elementos por defecto */
 }
 
-/* Clear floats after rows */
+/* Borra floats despues de las filas */
 
 .row:after {
   content: "";
@@ -51,20 +50,20 @@ h1 {
   clear: both;
 }
 
-/* Content */
+/* Contenido del content */
 
 .content {
   background-color: white;
   padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
+
 
 .show {
   display: block;
 }
 
-/* Style the buttons */
+/* Estilo de botones */
 
 .btn {
   border: none;

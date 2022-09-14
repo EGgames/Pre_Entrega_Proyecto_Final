@@ -34,6 +34,10 @@
 </head>
 
 <body>
+
+  <!--Header del proyecto-->
+  <!--Contiene todo el menu principal superior de la pagina-->
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html">
@@ -69,79 +73,87 @@
       </nav>
     </div>
   </header>
-  <section id="hero" class="hero d-flex align-items-center ">
-    <div class="container">
-      <div class="container">
-        <div class="container px-4 py-5 card text-white bg-dark mb-3  ">
-          <h2 class="pb-2 border-bottom">Formulario de contacto</h2>
-          <div>
-            <section id="contact" class="contact">
-              <div class="container">
 
-                <div>
-                  <iframe style="border:0; width: 100%; height: 340px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.1943924910556!2d-58.07380253989142!3d-32.301407198389356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afcb34886b682b%3A0x53ddf4c2c40efe99!2sWolf%20Informatica!5e0!3m2!1ses-419!2suy!4v1662883465197!5m2!1ses-419!2suy"
-                    frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="row gy-4 mt-4">
-                  <div class="col-lg-4">
-                    <div class="info-item d-flex">
-                      <i class="bi bi-geo-alt flex-shrink-0"></i>
-                      <div>
-                        <h3>Direccion:</h3>
-                        <p>Exodo 1480bis, Paysandu Ciudad, Paysandu, Uruguay</p>
-                      </div>
-                    </div>
-                    <div class="info-item d-flex">
-                      <i class="bi bi-envelope flex-shrink-0"></i>
-                      <div>
-                        <h3>Email:</h3>
-                        <p>wolf.informatica.uy@gmail.com</p>
-                      </div>
-                    </div>
-                    <div class="info-item d-flex">
-                      <i class="bi bi-phone flex-shrink-0"></i>
-                      <div>
-                        <h3>Whatsapp y llamadas:</h3>
-                        <p>+598 98 261 583</p>
-                      </div>
-                    </div>
+
+  <!--Fin del header del proyecto-->
+
+  <!--Inicio del main-->
+  <main>
+    <section id="hero" class="hero d-flex align-items-center ">
+      <div class="container">
+        <div class="container">
+          <div class="container px-4 py-5 card text-white bg-dark mb-3  ">
+            <h2 class="pb-2 border-bottom">Formulario de contacto</h2>
+            <div>
+              <section id="contact" class="contact">
+                <div class="container">
+
+                  <div>
+                    <iframe style="border:0; width: 100%; height: 340px;"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.1943924910556!2d-58.07380253989142!3d-32.301407198389356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afcb34886b682b%3A0x53ddf4c2c40efe99!2sWolf%20Informatica!5e0!3m2!1ses-419!2suy!4v1662883465197!5m2!1ses-419!2suy"
+                      frameborder="0" allowfullscreen></iframe>
                   </div>
-                  <div class="col-lg-8">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                      <div class="row">
-                        <div class="col-md-6 form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre"
-                            required>
-                        </div>
-                        <div class="col-md-6 form-group mt-3 mt-md-0">
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo"
-                            required>
+                  <div class="row gy-4 mt-4">
+                    <div class="col-lg-4">
+                      <div class="info-item d-flex">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                          <h3>Direccion:</h3>
+                          <p>Exodo 1480bis, Paysandu Ciudad, Paysandu, Uruguay</p>
                         </div>
                       </div>
-                      <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
-                          required>
+                      <div class="info-item d-flex">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                          <h3>Email:</h3>
+                          <p>wolf.informatica.uy@gmail.com</p>
+                        </div>
                       </div>
-                      <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
-                          required></textarea>
+                      <div class="info-item d-flex">
+                        <i class="bi bi-phone flex-shrink-0"></i>
+                        <div>
+                          <h3>Whatsapp y llamadas:</h3>
+                          <p>+598 98 261 583</p>
+                        </div>
                       </div>
-                      <div class="my-3">
-                        <div class="loading">Cargando</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">El mensaje ha sido enviado. Gracias por contactarte con Wolf
-                          informatica</div>
-                      </div>
-                      <div class="text-center"><button type="submit">Enviar mensaje</button></div>
-                    </form>
+                    </div>
+                    <div class="col-lg-8">
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre"
+                              required>
+                          </div>
+                          <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group mt-3">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
+                            required>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
+                            required></textarea>
+                        </div>
+                        <div class="my-3">
+                          <div class="loading">Cargando</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">El mensaje ha sido enviado. Gracias por contactarte con Wolf
+                            informatica</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-        </div>
-  </section>
+    </section>
+  </main>
+  <!--Fin del main-->
 
   <!--poppup-->
   <div class="form-popup" id="loginPoppup">
@@ -168,9 +180,8 @@
   </div>
   <!--fin de poppup-->
 
-
+  <!--Inicio del footer-->
   <footer id="footer" class="footer">
-
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
@@ -220,12 +231,9 @@
             <strong>Whatsapp y llamadas:</strong> +598 98 261 583<br>
             <strong>Email: </strong><a href="mailto:emiliano.galmarini@gmail.com">wolf.informatica.uy@gmail.com</a><br>
           </p>
-
         </div>
-
       </div>
     </div>
-
     <div class="container mt-4">
       <div class="copyright">
         &copy; Copyright <strong><span>Wolf Informatica</span></strong>. Todos los derechos reservados
@@ -234,9 +242,10 @@
         Diseñado por <a href="#">Emiliano Galmarini - Alumno CoderHouse - Comision 38180</a>
       </div>
     </div>
-
   </footer>
+  <!--Fin del footer-->
 
+  <!--Declaraciones Javascript-->
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="/vendor/glightbox/js/glightbox.min.js"></script>
@@ -265,6 +274,7 @@
       document.getElementById("inConstructionInfo").style.display = "none";
     }
   </script>
+  <!--Fin de declaraciones Javascript-->
 
 </body>
 
